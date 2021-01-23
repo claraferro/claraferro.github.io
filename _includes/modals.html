@@ -17,6 +17,22 @@
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
+                                {% if post.available == 1 %}
+                                <li>
+                                    Disponibilità:
+                                    <strong style="color: darkgreen;">
+                                        Disponibile!
+                                    </strong>
+                                </li>
+                                {% elsif post.available == 0 %}
+                                <li>
+                                    Disponibilità:
+                                        <a style="font-weight: bold; color: darkred;"
+                                         href="{{post.donelink}}">
+                                            Tatuato!
+                                        </a>
+                                </li>
+                                {% endif %}
                                 <li>Tipo:
                                     <strong>
                                         {{ post.type }}
