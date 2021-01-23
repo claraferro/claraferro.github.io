@@ -278,6 +278,36 @@ header {
     -o-background-size: cover;
 }
 
+.circlearancione {
+    /* animation: circlemove 1s infinite; */
+    margin-left: 5px;
+    vertical-align: middle;
+    float: right;
+    background-color: darkred;
+    border-color: white;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.circleverde {
+    animation: circlemove 1s infinite;
+    margin-left: 5px;
+    vertical-align: middle;
+    float: right;
+    background-color: darkgreen;
+    border-color: white;
+    border-radius: 50%;
+    border-width: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+@keyframes circlemove {
+    50% {margin-left: 15px;}
+  }
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;

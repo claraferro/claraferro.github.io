@@ -17,20 +17,17 @@
                             <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
                             <ul class="list-inline item-details">
-                                {% if post.available == 1 %}
+                                {% if post.available == 0 %}
                                 <li>
-                                    Disponibilità:
-                                    <strong style="color: darkgreen;">
-                                        Disponibile!
-                                    </strong>
+                                    Già tatuato!   
+                                    <div class="circlearancione" data-toggle="tooltip" data-html="true" title="Già tatuato, ma puoi sempre prenotarti per il prossimo ;)">
+                                    </div>
                                 </li>
-                                {% elsif post.available == 0 %}
+                                {% elsif post.available == 1 %}
                                 <li>
-                                    Disponibilità:
-                                        <a style="font-weight: bold; color: darkred;"
-                                         href="{{post.donelink}}">
-                                            Tatuato!
-                                        </a>
+                                    <strong style="color: darkgreen;"> Disponibile!</strong>   
+                                    <div class="circleverde" data-toggle="tooltip" data-html="true" title="Disponibile per essere tatuato! Contattami su instagram @claravoyant_ink"></div>
+                                    </div>
                                 </li>
                                 {% endif %}
                                 <li>Tipo:
