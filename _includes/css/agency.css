@@ -292,7 +292,7 @@ header {
 }
 
 .circleverde {
-    animation: circlemove 1s infinite;
+    animation: circlemove 2s infinite;
     margin-left: 5px;
     vertical-align: middle;
     float: right;
@@ -305,7 +305,7 @@ header {
 }
 
 @keyframes circlemove {
-    50% {margin-left: 15px;}
+    50% {margin-left: 10px;}
   }
 
 header .intro-text {
